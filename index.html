@@ -47,5 +47,19 @@
         </div>
     </div>
 
+    <script>
+        function clickSurUnLien (evt) {
+            evt.preventDefault();
+            var lien = this;
+            var selecteurDuSlide = lien.getAttribute("href");
+            console.log("le sélecteur CSS pour trouver le DIV : ", selecteurDuSlide);
+        }
+            var listeLiens = document.querySelectorAll("#navigation>li>a");
+            for (var i = o; i < listeLiens.length; i++) {
+                var unLien = listeLiens [i];
+                unLien.addEventListener('click', clickSurUnLien);
+            }
+    </script>
+
 </body>
 </html>

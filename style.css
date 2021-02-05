@@ -8,3 +8,7 @@
 #slider > div.courant {
     display: block;
 }
+
+#navigation > li   {
+    display: inline-block;
+}
