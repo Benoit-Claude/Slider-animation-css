@@ -1,14 +1,8 @@
-#slider > div {
-    position: absolute;
-    top: 0;
-    left: 0;
+#slider>div {
     display: none;
 }
 
-#slider > div.courant {
+#slider>.courant {
     display: block;
-}
-
-#navigation > li   {
-    display: inline-block;
+    width: 100%;
 }
