@@ -6,3 +6,39 @@
     display: block;
     width: 100%;
 }
+
+#slider .courant {
+    transform: translateX(0);
+}
+
+#slider .avant-1 {
+    transform: translateX(-300px);
+}
+
+#slider .avant-2 {
+    transform: translateX(-600px);
+}
+
+#slider .avant-3 {
+    transform: translateX(-900px);
+}
+
+#slider .avant-4 {
+    transform: translateX(-1200px);
+}
+
+#slider .après-1 {
+    transform: translateX(300px);
+}
+
+#slider .après-2 {
+    transform: translateX(600px);
+}
+
+#slider .après-3 {
+    transform: translateX(900px);
+}
+
+#slider .après-4 {
+    transform: translateX(1200px);
+}
