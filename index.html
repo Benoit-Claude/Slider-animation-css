@@ -58,10 +58,10 @@
                 console.log("le sélecteur CSS pour trouver le DIV : ", selecteurDuSlide);
                 document.querySelector('.courant').classList.remove('courant');
                 var nouveau = document.querySelector(selecteurDuSlide);
-                nouveau.classList.add('.courant');
+                nouveau.classList.add('courant');
             }
                 var listeLiens = document.querySelectorAll("#navigation>li>a");
-                for (var i = o; i < listeLiens.length; i++) {
+                for (var i = 0; i < listeLiens.length; i++) {
                     var unLien = listeLiens[i];
                     unLien.addEventListener('click', clickSurUnLien);
                 }
