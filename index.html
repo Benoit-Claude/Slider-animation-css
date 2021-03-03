@@ -25,7 +25,7 @@
         </li>
     </ul>
     <div id="slider">
-        <div id="slide1" class>
+        <div id="slide1" class="courant">
             <h1>slide 1</h1>
             <p>Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus et tener, quicquid increpuisset, ad salutis suae dispendium existimans factum aut cogitatum, insontium caedibus fecit victoriam luctuosam.</p>
         </div>
@@ -48,17 +48,24 @@
     </div>
 
     <script>
-        function clickSurUnLien (evt) {
-            evt.preventDefault();
-            var lien = this;
-            var selecteurDuSlide = lien.getAttribute("href");
-            console.log("le sélecteur CSS pour trouver le DIV : ", selecteurDuSlide);
-        }
-            var listeLiens = document.querySelectorAll("#navigation>li>a");
-            for (var i = o; i < listeLiens.length; i++) {
-                var unLien = listeLiens [i];
-                unLien.addEventListener('click', clickSurUnLien);
+        (function (){
+            "use strict";
+
+            function clickSurUnLien (evt) {
+                evt.preventDefault();
+                var lien = this;
+                var selecteurDuSlide = lien.getAttribute("href");
+                console.log("le sélecteur CSS pour trouver le DIV : ", selecteurDuSlide);
+                document.querySelector('.courant').classList.remove('courant');
+                var nouveau = document.querySelector(selecteurDuSlide);
+                nouveau.classList.add('.courant');
             }
+                var listeLiens = document.querySelectorAll("#navigation>li>a");
+                for (var i = o; i < listeLiens.length; i++) {
+                    var unLien = listeLiens[i];
+                    unLien.addEventListener('click', clickSurUnLien);
+                }
+        }());
     </script>
 
 </body>

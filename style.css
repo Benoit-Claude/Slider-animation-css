@@ -1,12 +1,11 @@
 #slider > div {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: none;
+
 }
 
 #slider > div.courant {
     display: block;
+
 }
 
 #navigation > li   {
