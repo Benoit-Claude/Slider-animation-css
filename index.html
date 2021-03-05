@@ -29,19 +29,19 @@
             <h1>slide 1</h1>
             <p>Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus et tener, quicquid increpuisset, ad salutis suae dispendium existimans factum aut cogitatum, insontium caedibus fecit victoriam luctuosam.</p>
         </div>
-        <div id="slide2" class>
+        <div id="slide2" class="apres-1">
             <h1>slide 2</h1>
             <p>Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus et tener, quicquid increpuisset, ad salutis suae dispendium existimans factum aut cogitatum, insontium caedibus fecit victoriam luctuosam.</p>
         </div>
-        <div id="slide3" class>
+        <div id="slide3" class="apres-2">
             <h1>slide 3</h1>
             <p>Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus et tener, quicquid increpuisset, ad salutis suae dispendium existimans factum aut cogitatum, insontium caedibus fecit victoriam luctuosam.</p>
         </div>
-        <div id="slide4" class>
+        <div id="slide4" class="apres-3">
             <h1>slide 4</h1>
             <p>Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus et tener, quicquid increpuisset, ad salutis suae dispendium existimans factum aut cogitatum, insontium caedibus fecit victoriam luctuosam.</p>
         </div>
-        <div id="slide5" class>
+        <div id="slide5" class="apres-4">
             <h1>slide 5</h1>
             <p>Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus et tener, quicquid increpuisset, ad salutis suae dispendium existimans factum aut cogitatum, insontium caedibus fecit victoriam luctuosam.</p>
         </div>
@@ -51,20 +51,46 @@
         (function (){
             "use strict";
 
-            function clickSurUnLien (evt) {
+           function clickSurUnLien (evt) {
                 evt.preventDefault();
                 var lien = this;
                 var selecteurDuSlide = lien.getAttribute("href");
                 console.log("le sélecteur CSS pour trouver le DIV : ", selecteurDuSlide);
                 document.querySelector('.courant').classList.remove('courant');
                 var nouveau = document.querySelector(selecteurDuSlide);
+                nouveau.classList="";
                 nouveau.classList.add('courant');
+
+               var precedent = nouveau;
+               var a = 1;
+               while (precedent = precedent.previousElementSibling){
+                   precedent.classList="";
+                   precedent.classList.add("avant-"+a);
+                   a++;
+               }
+
+               var suivant = nouveau;
+               var u = 1;
+               while ( suivant = suivant.nextElementSibling){
+                   suivant.classList="";
+                   suivant.classList.add("apres-"+u);
+                   u++;
+               }
             }
-                var listeLiens = document.querySelectorAll("#navigation>li>a");
-                for (var i = 0; i < listeLiens.length; i++) {
-                    var unLien = listeLiens[i];
-                    unLien.addEventListener('click', clickSurUnLien);
-                }
+
+
+
+
+            var listeLiens = document.querySelectorAll("#navigation>li>a");
+            for (var i = 0; i < listeLiens.length; i++) {
+                var unLien = listeLiens[i];
+                unLien.addEventListener('click', clickSurUnLien);
+            }
+
+
+
+
+
         }());
     </script>
 

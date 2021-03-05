@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="967981da-b26f-4017-ba1b-37b52cc0d3f3" name="Default Changelist" comment="Fonction java Préliminaire">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,9 @@
       <workItem from="1612720938117" duration="267000" />
       <workItem from="1614677685283" duration="61000" />
       <workItem from="1614677839433" duration="3000" />
-      <workItem from="1614758944510" duration="1780000" />
+      <workItem from="1614758944510" duration="6538000" />
+      <workItem from="1614888013263" duration="27000" />
+      <workItem from="1614935890294" duration="2639000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en forme HTML">
       <created>1612512827322</created>
@@ -99,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614759982884</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fin du tp slider animation 1ere partie">
+      <created>1614760970767</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614760970767</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,20 +133,33 @@
     <MESSAGE value="Début CSS" />
     <MESSAGE value="Fonction java Préliminaire" />
     <MESSAGE value="mise en forme java et css" />
-    <option name="LAST_COMMIT_MESSAGE" value="mise en forme java et css" />
+    <MESSAGE value="fin du tp slider animation 1ere partie" />
+    <option name="LAST_COMMIT_MESSAGE" value="fin du tp slider animation 1ere partie" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1220" y="280" key="FileChooserDialogImpl" timestamp="1614758988406">
+    <state x="1220" y="280" key="FileChooserDialogImpl" timestamp="1614888041094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1220" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1614758988406" />
+    <state x="1220" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1614888041094" />
     <state x="1078" y="290" key="MultipleFileMergeDialog" timestamp="1614760706444">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1078" y="290" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1614760706444" />
-    <state x="1032" y="261" key="Vcs.Push.Dialog.v2" timestamp="1614759986494">
+    <state x="1032" y="261" key="Vcs.Push.Dialog.v2" timestamp="1614760977919">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1032" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1614759986494" />
+    <state x="1032" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1614760977919" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/index.html</url>
+          <line>66</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
