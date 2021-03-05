@@ -1,7 +1,4 @@
-#slider > div {
-    display: none;
 
-}
 
 #slider > div.courant {
     display: block;
@@ -10,4 +7,16 @@
 
 #navigation > li   {
     display: inline-block;
+}
+
+#slider > div.courant {
+    transform: translateX(0);
+}
+
+#slider > div.avant {
+    transform: translateX(-300px);
+}
+
+#slider > div.apres {
+    transform: translateX(300px);
 }
