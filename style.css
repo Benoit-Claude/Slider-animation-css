@@ -13,10 +13,41 @@
     transform: translateX(0);
 }
 
-#slider > div.avant {
+#slider > div.avant-1 {
     transform: translateX(-300px);
 }
 
-#slider > div.apres {
+#slider > div.avant-2 {
+    transform: translateX(-600px);
+}
+
+#slider > div.avant-3 {
+    transform: translateX(-900px);
+}
+
+#slider > div.avant-4 {
+    transform: translateX(-1200px);
+}
+
+#slider > div.apres-1 {
     transform: translateX(300px);
+}
+
+#slider > div.apres-2 {
+    transform: translateX(600px);
+}
+
+#slider > div.apres-3 {
+    transform: translateX(900px);
+}
+
+#slider > div.apres-4 {
+    transform: translateX(1200px);
+}
+
+#slider>div {
+    position: absolute;
+    padding: 10px;
+    transition: 1s ease-out;
+    display: inline-block;
 }
