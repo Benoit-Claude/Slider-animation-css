@@ -50,6 +50,7 @@
     <button class="apres">Après</button>
 
     <script>
+
        (function (){
             "use strict";
 
@@ -67,7 +68,7 @@
                var a = 1;
                while (precedent = precedent.previousElementSibling){
                    precedent.classList="";
-                   precedent.classList.add("avant-"+a);
+                   precedent.classList.add("avant-" + a);
                    a++;
                }
 
@@ -80,6 +81,53 @@
                }
             }
 
+            let boutonsuivant = document.querySelectorAll('.slider>div');
+            function clickBoutonSuivant (evt){
+                evt.preventDefault();
+                var boutonsuivant = document.querySelector('ouvert').nextElementSibling || document.querySelector('.slider>*:first-child') ;
+                boutonsuivant.classList= '';
+                boutonsuivant.classList.add('ouvert');
+
+                let slideasuivant = boutonsuivant;
+                let c = 1;
+                while (slideasuivant = slideasuivant.previousElementSibling){
+                    slideasuivant.classList = '';
+                    slideasuivant.classList.add("avant-" + c);
+                    c++;
+                }
+
+                let slideapsuivant = boutonsuivant;
+                let d = 1;
+                while (slideapsuivant = slideapsuivant.nextElementSibling) {
+                    slideapsuivant.classList = '';
+                    slideapsuivant.classList.add("apres-" + d);
+                    d++;
+                }
+            }
+
+            let boutonapres = document.querySelectorAll('slider>div');
+            function clickBoutonapres(evt){
+                evt.preventDefault();
+                var boutonprecedent = document.querySelector('.ouvert').previousElementSibling || document.querySelector('.slider>*:last-child');
+                boutonprecedent.classList = '';
+                boutonprecedent.classList.add('ouvert');
+
+                let slideaprecedent = boutonprecedent;
+                let e = 1;
+                while (slideaprecedent = slideaprecedent.previousElementSibling) {
+                    slideaprecedent.classList = '';
+                    slideaprecedent.classList.add("avant-" + e);
+                    e++;
+                }
+
+                let slideapprecedent = boutonprecedent;
+                let f = 1;
+                while (slideapprecedent = slideapprecedent.nextElementSibling){
+                    slideapprecedent.classList = '';
+                    slideapprecedent.classList.add("apres-" + f);
+                    f++;
+                }
+            }
 
 
             var listeLiens = document.querySelectorAll("#navigation>li>a");
@@ -88,8 +136,15 @@
                 unLien.addEventListener('click', clickSurUnLien);
             }
 
+            for (var j = 0; j < (boutonsuivant.length - 1); j++) {
+                var leliens = boutonsuivant[j];
+                document.querySelector('.avant').addEventListener("click", clickBoutonSuivant);
+            }
 
-
+            for (var t = 0; t < boutonapres.length; t++){
+                var lelien = boutonapres[t];
+                document.querySelector('.apres').addEventListener("click", clickBoutonapres);
+            }
 
 
         }());

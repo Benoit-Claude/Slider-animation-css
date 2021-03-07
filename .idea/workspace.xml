@@ -22,7 +22,6 @@
     <list default="true" id="967981da-b26f-4017-ba1b-37b52cc0d3f3" name="Default Changelist" comment="Fonction java Préliminaire">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +72,10 @@
       <workItem from="1614677839433" duration="3000" />
       <workItem from="1614758944510" duration="6538000" />
       <workItem from="1614888013263" duration="27000" />
-      <workItem from="1614935890294" duration="2639000" />
+      <workItem from="1614935890294" duration="5645000" />
+      <workItem from="1614941553678" duration="10000" />
+      <workItem from="1614960832597" duration="27000" />
+      <workItem from="1615147951516" duration="5667000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en forme HTML">
       <created>1612512827322</created>
@@ -110,7 +112,42 @@
       <option name="project" value="LOCAL" />
       <updated>1614760970767</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="js classes avant après">
+      <created>1614938653724</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614938653724</updated>
+    </task>
+    <task id="LOCAL-00007" summary="css classes avant après">
+      <created>1614938669895</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614938669895</updated>
+    </task>
+    <task id="LOCAL-00008" summary="css classes avant après">
+      <created>1614939566628</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614939566628</updated>
+    </task>
+    <task id="LOCAL-00009" summary="css défilement 3d">
+      <created>1614940257166</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614940257166</updated>
+    </task>
+    <task id="LOCAL-00010" summary="retour tp 3d slide">
+      <created>1614941535920</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614941535920</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,29 +171,32 @@
     <MESSAGE value="Fonction java Préliminaire" />
     <MESSAGE value="mise en forme java et css" />
     <MESSAGE value="fin du tp slider animation 1ere partie" />
-    <option name="LAST_COMMIT_MESSAGE" value="fin du tp slider animation 1ere partie" />
+    <MESSAGE value="js classes avant après" />
+    <MESSAGE value="css classes avant après" />
+    <MESSAGE value="css défilement 3d" />
+    <MESSAGE value="retour tp 3d slide" />
+    <option name="LAST_COMMIT_MESSAGE" value="retour tp 3d slide" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1220" y="280" key="FileChooserDialogImpl" timestamp="1614888041094">
+    <state x="1220" y="280" key="FileChooserDialogImpl" timestamp="1614960855957">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1220" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1614888041094" />
+    <state x="1220" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1614960855957" />
     <state x="1078" y="290" key="MultipleFileMergeDialog" timestamp="1614760706444">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1078" y="290" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1614760706444" />
-    <state x="1032" y="261" key="Vcs.Push.Dialog.v2" timestamp="1614760977919">
+    <state x="1032" y="261" key="Vcs.Push.Dialog.v2" timestamp="1614941555329">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1032" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1614760977919" />
+    <state x="1032" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1614941555329" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/index.html</url>
-          <line>66</line>
-          <properties lambdaOrdinal="-1" />
+          <line>70</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
