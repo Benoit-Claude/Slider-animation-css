@@ -47,13 +47,14 @@
 
 #slider>div {
     position: absolute;
+    flex-shrink: 0;
     padding: 10px;
     transition: 1s ease-out;
-    display: inline-block;
     background: gray;
 }
 
 #slider {
+    display: flex;
     width: 300px;
     height: 200px;
     position: relative;
@@ -95,3 +96,8 @@
     transform: translateX(470px) translateZ(-130px) rotateY(-80deg);
 }
 
+#bouton {
+    position: absolute;
+    top: 55vh;
+    left: 50vw;
+}

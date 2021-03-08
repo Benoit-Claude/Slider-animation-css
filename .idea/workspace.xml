@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="967981da-b26f-4017-ba1b-37b52cc0d3f3" name="Default Changelist" comment="Fonction java Préliminaire">
+    <list default="true" id="967981da-b26f-4017-ba1b-37b52cc0d3f3" name="Default Changelist" comment="Java bouton non réussi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,9 @@
       <workItem from="1614935890294" duration="5645000" />
       <workItem from="1614941553678" duration="10000" />
       <workItem from="1614960832597" duration="27000" />
-      <workItem from="1615147951516" duration="5667000" />
+      <workItem from="1615147951516" duration="5729000" />
+      <workItem from="1615195108619" duration="34000" />
+      <workItem from="1615223254216" duration="2639000" />
     </task>
     <task id="LOCAL-00001" summary="Mise en forme HTML">
       <created>1612512827322</created>
@@ -147,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614941535920</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Java bouton non réussi">
+      <created>1615154190713</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615154190713</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,31 +185,21 @@
     <MESSAGE value="css classes avant après" />
     <MESSAGE value="css défilement 3d" />
     <MESSAGE value="retour tp 3d slide" />
-    <option name="LAST_COMMIT_MESSAGE" value="retour tp 3d slide" />
+    <MESSAGE value="Java bouton non réussi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java bouton non réussi" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1220" y="280" key="FileChooserDialogImpl" timestamp="1614960855957">
+    <state x="1220" y="280" key="FileChooserDialogImpl" timestamp="1615195149732">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1220" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1614960855957" />
+    <state x="1220" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1615195149732" />
     <state x="1078" y="290" key="MultipleFileMergeDialog" timestamp="1614760706444">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1078" y="290" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1614760706444" />
-    <state x="1032" y="261" key="Vcs.Push.Dialog.v2" timestamp="1614941555329">
+    <state x="1032" y="261" key="Vcs.Push.Dialog.v2" timestamp="1615154196240">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1032" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1614941555329" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/index.html</url>
-          <line>70</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="1032" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1615154196240" />
   </component>
 </project>

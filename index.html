@@ -24,7 +24,12 @@
             <a href="#slide5" accesskey="5">5</a>
         </li>
     </ul>
-    <button class="avant">Avant</button>
+
+    <div id="bouton">
+        <button id="avant">Avant</button>
+        <button id="apres">Après</button>
+    </div>
+
     <div id="slider">
         <div id="slide1" class="courant">
             <h1>slide 1</h1>
@@ -47,7 +52,6 @@
             <p>Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus et tener, quicquid increpuisset, ad salutis suae dispendium existimans factum aut cogitatum, insontium caedibus fecit victoriam luctuosam.</p>
         </div>
     </div>
-    <button class="apres">Après</button>
 
     <script>
 
@@ -55,96 +59,64 @@
             "use strict";
 
            function clickSurUnLien (evt) {
-                evt.preventDefault();
-                var lien = this;
-                var selecteurDuSlide = lien.getAttribute("href");
-                console.log("le sélecteur CSS pour trouver le DIV : ", selecteurDuSlide);
-                document.querySelector('.courant').classList.remove('courant');
-                var nouveau = document.querySelector(selecteurDuSlide);
-                nouveau.classList="";
-                nouveau.classList.add('courant');
-
-               var precedent = nouveau;
-               var a = 1;
-               while (precedent = precedent.previousElementSibling){
-                   precedent.classList="";
-                   precedent.classList.add("avant-" + a);
-                   a++;
+               if (evt.target.matches("a")) {
+                   var lien = evt.target;
+                   console.log(lien, "c'est le lien")
                }
+               var selecteurDuSlide = lien.getAttribute("href");
+               console.log("le sélecteur CSS pour trouver le DIV : ", selecteurDuSlide);
+               document.querySelector('.courant').classList.remove('courant');
+               var nouveau = document.querySelector(selecteurDuSlide);
+               affiche(nouveau);
+           }
 
-               var suivant = nouveau;
-               var u = 1;
-               while ( suivant = suivant.nextElementSibling){
-                   suivant.classList="";
-                   suivant.classList.add("apres-"+u);
-                   u++;
-               }
-            }
+                document.querySelector("#navigation").addEventListener('click', clickSurUnLien);
 
-            let boutonsuivant = document.querySelectorAll('.slider>div');
-            function clickBoutonSuivant (evt){
-                evt.preventDefault();
-                var boutonsuivant = document.querySelector('ouvert').nextElementSibling || document.querySelector('.slider>*:first-child') ;
-                boutonsuivant.classList= '';
-                boutonsuivant.classList.add('ouvert');
 
-                let slideasuivant = boutonsuivant;
-                let c = 1;
-                while (slideasuivant = slideasuivant.previousElementSibling){
-                    slideasuivant.classList = '';
-                    slideasuivant.classList.add("avant-" + c);
-                    c++;
+            function affiche (nouveau){
+                nouveau.className = 'courant';
+                var precedent = nouveau;
+                var a = 1;
+                while (precedent = precedent.previousElementSibling){
+                    precedent.classList="";
+                    precedent.classList.add("avant-" + a);
+                    a++;
                 }
 
-                let slideapsuivant = boutonsuivant;
-                let d = 1;
-                while (slideapsuivant = slideapsuivant.nextElementSibling) {
-                    slideapsuivant.classList = '';
-                    slideapsuivant.classList.add("apres-" + d);
-                    d++;
+                var suivant = nouveau;
+                var u = 1;
+                while ( suivant = suivant.nextElementSibling){
+                    suivant.classList="";
+                    suivant.classList.add("apres-"+u);
+                    u++;
                 }
             }
 
-            let boutonapres = document.querySelectorAll('slider>div');
-            function clickBoutonapres(evt){
-                evt.preventDefault();
-                var boutonprecedent = document.querySelector('.ouvert').previousElementSibling || document.querySelector('.slider>*:last-child');
-                boutonprecedent.classList = '';
-                boutonprecedent.classList.add('ouvert');
+           function clicksursuivant (){
+               var ancienneslide = document.querySelector("#slider>div.courant");
+               var nouveau = ancienneslide.nextElementSibling;
+               affiche(nouveau);
+               clearInterval(timer);
+           }
 
-                let slideaprecedent = boutonprecedent;
-                let e = 1;
-                while (slideaprecedent = slideaprecedent.previousElementSibling) {
-                    slideaprecedent.classList = '';
-                    slideaprecedent.classList.add("avant-" + e);
-                    e++;
-                }
+           document.querySelector("#apres").addEventListener('click', clicksursuivant);
 
-                let slideapprecedent = boutonprecedent;
-                let f = 1;
-                while (slideapprecedent = slideapprecedent.nextElementSibling){
-                    slideapprecedent.classList = '';
-                    slideapprecedent.classList.add("apres-" + f);
-                    f++;
-                }
-            }
+           function clicksurprecedent (){
+               var ancienneslide = document.querySelector("#slider>div.courant");
+               var nouveau = ancienneslide.previousElementSibling;
+               affiche(nouveau);
+               clearInterval(timer);
+           }
 
+           document.querySelector("#avant").addEventListener('click', clicksurprecedent);
 
-            var listeLiens = document.querySelectorAll("#navigation>li>a");
-            for (var i = 0; i < listeLiens.length; i++) {
-                var unLien = listeLiens[i];
-                unLien.addEventListener('click', clickSurUnLien);
-            }
+           var timer = setInterval(timersuivant, 2000);
 
-            for (var j = 0; j < (boutonsuivant.length - 1); j++) {
-                var leliens = boutonsuivant[j];
-                document.querySelector('.avant').addEventListener("click", clickBoutonSuivant);
-            }
-
-            for (var t = 0; t < boutonapres.length; t++){
-                var lelien = boutonapres[t];
-                document.querySelector('.apres').addEventListener("click", clickBoutonapres);
-            }
+           function timersuivant (){
+               var ancienneslide = document.querySelector("#slider>div.courant");
+               var nouveau = ancienneslide.nextElementSibling;
+               affiche(nouveau);
+           }
 
 
         }());
